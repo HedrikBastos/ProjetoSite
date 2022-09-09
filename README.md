@@ -1,2 +1,2 @@
 # ProjetoSite
- Site dinâmico com painel de controle.
+ Site dinâmico com painel de controle, PHP puro, sem framework!
