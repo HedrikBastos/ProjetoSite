@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    background: #dcd9c9;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* Página de login*/
+
+.box-login{
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
+max-width: 600px;
+width: 95%;
+padding: 50px 2%;
+background: white;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+}
+
+.box-login h2{
+       text-align: center;
+       font-size: 17px;
+       text-transform: uppercase;
+       margin: 10px 0;
+       color: black; 
+}
+
+.box-login input[type=text], .box-login input[type=password]{
+    width: 100%;
+    height: 40%;
+    border-radius: 1px solid #ccc;
+    padding-left: 8px;
+    margin-top: 8px;
+}
+
+
+
+.box-login input[type=submit]{
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    background: #2176FF;
+    color: white;
+    border: 0;
+    }
+
+    /* Erro box do Painel */
+
+.erro-box{
+    width: 100%;
+    padding: 8px 2%;
+    height: 300;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    background: rgb(255, 60, 0);
+    color: white;
+}
+.erro-box img{
+    margin: -1%;
+}
+
+ /*Fim login*/
+
+ /*Painel de controle*/
+
+ .clear{clear: both;}
+
+ .center{padding: 0 2%;margin:0 auto;}
+
+  div.menu::-webkit-scrollbar{
+     width: 12px;
+    
+ }
+
+ div.menu::-webkit-scrollbar-thumb{
+     
+     background-color: rgba(255, 255, 255, 0.397);
+     border-radius: 10px;
+     border: 2px solid rgba(55, 64, 71, 0.671);
+ }
+
+ header{
+     position: relative;
+     left: 250px;
+     padding: 10px 0;
+     background: #073B4C;
+     width: calc(100% - 250px);
+ }
+
+ .content{
+    width: calc(100% - 250px);
+    position: relative;
+    left: 250px;
+    padding: 2px;
+ }
+
+ .items-menu{
+     margin-top: 30px;
+ }
+
+ .items-menu h2{
+    text-align: left;
+    font-weight: normal;
+    font-size: 17px;
+    background:#073B4C;
+    color: white;
+    padding: 8px;
+ }
+ 
+ .items-menu a{
+     display: block;
+     padding: 8px;
+     font-weight: 300;
+     font-size: 16px;
+     text-decoration: none;
+     color: white;
+     border-bottom: 2px solid #073B4C;
+ }
+ .loggout{
+     float: right;
+ }
+.loggout a{
+    padding: -2px 20px;
+    text-decoration: none;
+}
+ .loggout a > img{
+     width: 20px;
+     position: relative;
+     top: -50%;
+     transform: translate(2%, 24%);
+
+ }
+ .loggout a > span{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+ }
+
+
+ .menu-btn{
+     float: left;
+     cursor: pointer;
+     font-size: 23px;
+ }
+
+ .menu-wraper{width: 250px;}
+ div.menu{
+     overflow-x:hidden;
+    overflow-y:auto;
+    height: 100%;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background:#074357f3;
+    float: left;
+    width: 250px;
+}
+div.box-usuario{
+    padding: 8px;
+    text-align: center;
+}
+.avatar-usuario{
+    text-align: left;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 0.568) ;
+}
+
+.avatar-usuario img{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  width: 50px;
+}
+
+.imagem-usuario{
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    position: relative;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 0.651);
+}
+
+.imagem-usuario img{
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.nome-usuario{
+    text-align:center;
+    padding: 10px;
+}
+.nome-usuario p{
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+/*Conteúdo principal do painel*/
+
+.w100{
+    width: 98.3%;
+}
+
+.w50{
+    width: 48%;
+  
+}
+
+.left{
+    float: left;
+}
+
+.rigth{
+    float: right;
+}
+
+
+
+.box-content{
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+.box-content h2{
+    font-weight: 300;
+    font-size: 23px;
+}
+
+/*tabelas*/
+
+.wraper-table{
+    overflow-x: auto;
+}
+table{
+    font-weight: 300;
+    min-width: 900px;
+    margin:20px 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr:nth-of-type(1){
+    background: #0091ea;
+    color: white;
+}
+table tr{
+    border-bottom: 1px solid black;
+    color: #555;
+}
+
+table td{
+    padding: 8px;
+}
+
+table a.btn{
+    text-decoration: none;
+    padding: 4px 6px;
+    color: white;
+    font-size: 13px;
+}
+a.btn.edit{background: #F4B03E;}
+a.btn.delete{background: #df3f2d;}
+a.btn.order{background: #0091ea;
+padding: 5px;}
+
+/*Paginacao*/
+.paginacao{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.paginacao a{
+    font-size: 14px;
+    margin: 0 8px;
+    display: inline-block;
+    padding: 3px 4px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #666;
+}
+
+.paginacao a.page-selected{
+    background: rgb(220,220,200);
+}
+
+/*Box Metricas*/
+ .box-metricas{
+     margin-top: 16px;
+     padding: 0 30px;
+ }
+.box-metrica-single{
+    float: left;
+    position: relative;
+    width: 33.3%;
+    background-color:#F4B03E;
+    border: 5px solid white;
+}
+
+.box-metricas .box-metrica-single:nth-of-type(2){
+    background:#E05C4E;
+}
+.box-metricas .box-metrica-single:nth-of-type(3){
+    background: #0091ea;
+}
+
+.box-metrica-wraper{
+    padding: 10px 20px;
+    text-align: left;
+    color: white;
+}
+
+.box-metrica-wraper h2{
+    font-size: 28px;
+}
+
+.box-metrica-wraper p{
+    padding: 10px 0;
+    font-size: 26px;
+}
+
+/*Tabela Responsiva*/
+
+.table-responsive{
+
+    max-width: 1280px;
+    margin: 20px auto;
+}
+
+.table-responsive .row:nth-of-type(1){
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.table-responsive .row{
+    color: #777;
+    padding: 8px 0;
+}
+
+.col{
+    float: left;
+    width: 50%;
+}
+
+.box-content form{
+    margin:30px 0;
+}
+
+.box-content form label{
+    font-size: 17px;
+    font-weight: 300;
+    color: black;
+    display: block;
+}
+.box-content .form-group{
+    margin: 15px 0;
+}
+
+.box-content form input[type=text],.box-content form input[type=password]{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+}
+
+.box-content textarea{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    resize: vertical;
+}
+
+.box-content form input[type=submit]{
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    background: #2176FF;
+    color: white;
+    border: 0;
+
+}
+.box-content form input[type=file]{
+    margin-top: 8px;
+    width: 100%;
+    padding:8px;
+    border: 1px solid #ccc;
+}
+
+/*Box de alerta*/
+
+.box-alert{
+    width: 100%;
+    height: 40px;    
+}
+
+.sucesso{
+    width: 100%;
+    padding: 8px 2%;
+    height: 300;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    background: rgb(8, 163, 163);
+    color: white; 
+
+}
+
+.erro{
+    width: 100%;
+    padding: 8px 2%;
+    height: 300;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    background: rgb(255, 60, 0);
+    color: white; 
+}
+
+.menu-active{
+    background-image:linear-gradient(to right, #052733da, transparent);
+}
+.menu-active::before{
+    content:'\00BB';
+}
+
+.form-group-login{
+    float: right;
+    font-size: 16px;
+    padding-right: 6px;
+    font-weight: 300;
+    color: black;
+    position: relative;
+    top: 10px;
+}
+
+
+@media screen and (max-width: 1024px){
+    .box-metrica-single{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+   
+    .content{
+        width: 100%;
+        left:0;
+    }
+    header{
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .w50{
+        width: 100%;
+    }   
+    .box-single-metrica{
+        width: 100%;
+        padding-top: 40%;
+    }
+}
+
+@media screen and (max-width: 400px){
+   
+    .box-metrica-wraper h2{
+        font-size: 24px;
+    }
+
+    .box-metrica-wraper p{
+        padding: 10px 0;
+        font-size: 22px;
+    }
+   
+    .menu-wraper{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:380px){
+    .items-menu a{
+        font-size: 15px;
+    }
+}
